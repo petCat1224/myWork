@@ -1,0 +1,81 @@
+.tingwu-app {
+  --tingwu-primary: #6155f5;
+  --tingwu-primary-light: #eeecff;
+  --tingwu-bg: #f4f5f9;
+  --tingwu-sidebar: #ffffff;
+  --tingwu-text: #1d2129;
+  --tingwu-text-secondary: #86909c;
+}
+
+.tingwu-app {
+  background: var(--tingwu-bg);
+  color: var(--tingwu-text);
+  font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+}
+
+.tingwu-sidebar {
+  background: var(--tingwu-sidebar);
+  border-right: 1px solid #e5e6eb;
+}
+
+.tingwu-nav-active {
+  background: var(--tingwu-primary-light);
+  color: var(--tingwu-primary);
+}
+
+.tingwu-markdown h1,
+.tingwu-markdown h2,
+.tingwu-markdown h3 {
+  color: var(--tingwu-text);
+  font-weight: 600;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+.tingwu-markdown ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.tingwu-markdown p {
+  margin-bottom: 0.75em;
+  line-height: 1.75;
+}
+
+.tingwu-markdown strong {
+  color: var(--tingwu-primary);
+}
+
+.tingwu-waveform .wavesurfer-region {
+  border-radius: 4px;
+}
+
+.tingwu-detail-grid {
+  background: var(--tingwu-bg);
+}
+
+.tingwu-panel {
+  background: #fff;
+  border: 1px solid #e5e6eb;
+  border-radius: 12px;
+}
+
+.tingwu-transcript-active {
+  background: var(--tingwu-primary-light);
+  border-color: rgb(97 85 245 / 30%);
+}
+
+.tingwu-stream-badge {
+  animation: tingwu-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes tingwu-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+}

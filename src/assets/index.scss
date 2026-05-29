@@ -1,0 +1,15 @@
+.output {
+  text-align: left;
+  width: 100%;
+}
+
+.output--pending {
+  opacity: 0.85;
+}
+
+.pending-hint {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #888;
+}

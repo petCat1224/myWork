@@ -1,0 +1,40 @@
+.snow-forest-scene {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #a8c4dc;
+
+  &--3d {
+    canvas {
+      display: block;
+      width: 100% !important;
+      height: 100vh !important;
+      height: 100dvh !important;
+      touch-action: none;
+    }
+  }
+}
+
+.scene-caption {
+  position: absolute;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.15em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .scene-caption {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+}
